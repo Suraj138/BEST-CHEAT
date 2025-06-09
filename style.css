@@ -1,0 +1,174 @@
+/* Blobs animated background */
+body {
+  position: relative;
+  /* overflow: hidden; */  /* Ye line comment ya delete kar de */
+  overflow-y: auto; /* scroll enable karne ke liye */
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  min-height: 100vh;
+  color: white;
+  font-family: sans-serif;
+}
+
+
+.blob {
+  position: fixed; /* absolute se better fixed for background */
+  border-radius: 50%;
+  filter: blur(120px);
+  opacity: 0.7;
+  animation: moveBlob 20s ease-in-out infinite alternate;
+  mix-blend-mode: screen;
+  z-index: -1;
+}
+
+.blob1 {
+  width: 400px;
+  height: 400px;
+  background: #ff0080;
+  top: 10%;
+  left: 20%;
+  animation-delay: 0s;
+}
+
+.blob2 {
+  width: 500px;
+  height: 500px;
+  background: #7928ca;
+  top: 40%;
+  left: 60%;
+  animation-delay: 10s;
+}
+
+@keyframes moveBlob {
+  0% {
+    transform: translate(0, 0) scale(1);
+  }
+  50% {
+    transform: translate(30px, -50px) scale(1.1);
+  }
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+}
+
+/* Glassmorphic style for sections */
+section {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 2rem;
+  margin: 2rem auto;
+  box-shadow: 0 0 40px rgba(120, 0, 120, 0.2);
+  max-width: 900px;
+}
+
+/* Footer styling */
+footer {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 1rem;
+  max-width: 900px;
+  margin: 2rem auto 4rem;
+  text-align: center;
+  color: white;
+}
+
+/* Price list cards hover effect */
+.price-list-wrapper {
+  overflow: hidden;
+  position: relative;
+  max-width: 100%;
+}
+
+.price-list-scroll {
+  display: flex;
+  gap: 1.5rem;
+  animation: scrollRightToLeft 15s linear infinite;
+  will-change: transform;
+}
+
+@keyframes scrollRightToLeft {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.price-card {
+  flex: 0 0 auto;
+  min-width: 100px;
+  transition: transform 10s ease, box-shadow 0.3s ease;
+}
+
+.price-card:hover {
+  transform: scale(1.07);
+  box-shadow: 0 0 25px 5px rgba(255, 0, 128, 0.7);
+}
+
+
+@keyframes flame {
+  0% { transform: scale(1) rotate(0deg); filter: drop-shadow(0 0 6px orange); }
+  25% { transform: scale(1.05) rotate(-5deg); filter: drop-shadow(0 0 8px red); }
+  50% { transform: scale(1.1) rotate(5deg); filter: drop-shadow(0 0 10px yellow); }
+  75% { transform: scale(1.05) rotate(-5deg); filter: drop-shadow(0 0 8px red); }
+  100% { transform: scale(1) rotate(0deg); filter: drop-shadow(0 0 6px orange); }
+}
+
+.animate-flame {
+  display: inline-block;
+  animation: flame 1s infinite ease-in-out;
+}
+
+
+
+
+
+
+
+
+
+ .glow-text span {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 800;
+    font-size: 5rem;
+    display: inline-block;
+    color: #fff;
+    text-shadow: 0 0 5px #0ff, 0 0 10px #0ff, 0 0 20px #0ff;
+    animation: glowLetter 2s ease-in-out infinite;
+    opacity: 0.3;
+  }
+
+  .glow-text span:nth-child(1) { animation-delay: 0s; }
+  .glow-text span:nth-child(2) { animation-delay: 0.2s; }
+  .glow-text span:nth-child(3) { animation-delay: 0.4s; }
+  .glow-text span:nth-child(4) { animation-delay: 0.6s; }
+  .glow-text span:nth-child(5) { animation-delay: 0.8s; }
+  .glow-text span:nth-child(6) { animation-delay: 1s; }
+  .glow-text span:nth-child(7) { animation-delay: 1.2s; }
+  .glow-text span:nth-child(8) { animation-delay: 1.4s; }
+  .glow-text span:nth-child(9) { animation-delay: 1.6s; }
+
+  @keyframes glowLetter {
+    0%, 100% {
+      text-shadow: 0 0 5px #0ff, 0 0 10px #0ff;
+      opacity: 0.3;
+    }
+    50% {
+      text-shadow: 0 0 10px #0ff, 0 0 20px #0ff, 0 0 30px #0ff;
+      opacity: 1;
+    }
+  }
+
+  .glow-subtext span {
+    font-family: 'Orbitron', sans-serif;
+    color: #ffcc00;
+    text-shadow: 0 0 5px #ffcc00, 0 0 10px #ff9900;
+  }
+
+
+
