@@ -6,10 +6,17 @@
   <title>BestCheat | Next Level Loader</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
+  <script src="main.js" defer></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
+  <!-- Preloader -->
+<div id="preloader">
+  <div class="loader-text text-white text-2xl font-bold">Loading...</div>
+</div>
 
   <!-- Blobs Background -->
   <div class="blob blob1"></div>
@@ -17,7 +24,7 @@
 
   <!-- Hero Section -->
 
-<section class="text-center py-20 bg-black">
+<section id="home" class="text-center py-20 bg-black">
   <h1 class="glow-text text-7xl font-bold">
     <!-- Har letter span me wrap -->
     <span>B</span><span>E</span><span>S</span><span>T</span><span>C</span><span>H</span><span>E</span><span>A</span><span>T</span>
@@ -42,7 +49,7 @@
 </h2>
 
   
-  <div class="price-list-wrapper">
+  <div id="pricing"class="price-list-wrapper">
     <div class="price-list-scroll">
       <div class="bg-gray-800 rounded-xl p-6 shadow-lg price-card">
         <h3 class="text-xl font-bold text-green-400">1 Day</h3>
@@ -101,6 +108,255 @@
     </div>
   </section>
 
+  <section>
+  <h2 class="text-3xl font-semibold text-cyan-400 text-center mb-8">🚀 BESTCHEAT Loader Features</h2>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6 px-4">
+
+    <div class="glass-card" data-aos="fade-up">
+      <h3 class="text-xl font-bold mb-2 text-white">🎯 Android 10 to 15</h3>
+      <p class="text-gray-200">Full support across modern Android versions.</p>
+    </div>
+
+    <div class="glass-card" data-aos="fade-up" data-aos-delay="100">
+      <h3 class="text-xl font-bold mb-2 text-white">🔐 Safe on Main Account</h3>
+      <p class="text-gray-200">Zero flags, zero bans — 100% secure.</p>
+    </div>
+
+    <div class="glass-card" data-aos="fade-up" data-aos-delay="200">
+      <h3 class="text-xl font-bold mb-2 text-white">🌀 All Type ESP</h3>
+      <p class="text-gray-200">Enemy, loot, health, and custom ESP options included.</p>
+    </div>
+
+    <div class="glass-card" data-aos="fade-up" data-aos-delay="300">
+      <h3 class="text-xl font-bold mb-2 text-white">🎯 Powerful Aim</h3>
+      <p class="text-gray-200">Laser-sharp, head-focused aim assist.</p>
+    </div>
+
+    <div class="glass-card" data-aos="fade-up" data-aos-delay="400">
+      <h3 class="text-xl font-bold mb-2 text-white">🌐 Online Update</h3>
+      <p class="text-gray-200">No reinstallation needed — updates in real-time.</p>
+    </div>
+
+    <div class="glass-card" data-aos="fade-up" data-aos-delay="500">
+      <h3 class="text-xl font-bold mb-2 text-white">📶 Low Ping Optimization</h3>
+      <p class="text-gray-200">Boost your gaming ping and reduce lag.</p>
+    </div>
+
+    <div class="glass-card" data-aos="fade-up" data-aos-delay="600">
+      <h3 class="text-xl font-bold mb-2 text-white">🎯 FOV Aimbot</h3>
+      <p class="text-gray-200">Smart aim within field-of-view for natural gameplay.</p>
+    </div>
+
+    <div class="glass-card" data-aos="fade-up" data-aos-delay="700">
+      <h3 class="text-xl font-bold mb-2 text-white">🛑 360° Alert System</h3>
+      <p class="text-gray-200">Warning system for enemies behind or around you.</p>
+    </div>
+
+    <div class="glass-card" data-aos="fade-up" data-aos-delay="800">
+      <h3 class="text-xl font-bold mb-2 text-white">👁️ Aimbot Visibility</h3>
+      <p class="text-gray-200">Auto-lock only on visible targets — no blind shots.</p>
+    </div>
+
+    <div class="glass-card" data-aos="fade-up" data-aos-delay="900">
+      <h3 class="text-xl font-bold mb-2 text-white">⚙️ Auto Config Injector</h3>
+      <p class="text-gray-200">One-click injection, no manual setup needed.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- Sticky Buy Now Button -->
+<a href="https://t.me/bestcheat_vip" target="_blank"
+   class="fixed bottom-6 right-6 z-50 bg-gradient-to-r from-pink-500 to-yellow-400 text-white font-bold py-3 px-6 rounded-full shadow-lg hover:scale-105 transition transform duration-300 animate-pulse">
+  💸 Buy Now
+</a>
+
+<!-- FAQ Section -->
+<section id="faq" class="max-w-4xl mx-auto my-12 px-4">
+  <h2 class="text-3xl font-bold text-center mb-8 glow-subtext" data-aos="fade-up">Frequently Asked Questions</h2>
+
+  <!-- FAQ Item 1 -->
+  <div class="faq-item bg-white/10 backdrop-blur-md border border-white/20 rounded-xl shadow-lg p-5 mb-4 transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:bg-white/20 hover:border-white/30" data-aos="fade-up" data-aos-delay="100">
+    <div class="faq-toggle cursor-pointer flex items-center gap-3">
+      <span class="faq-icon text-xl text-white">➕</span>
+      <h3 class="faq-question text-white text-lg font-semibold">Is this safe for main account?</h3>
+    </div>
+    <div class="faq-answer hidden mt-2 ml-7 text-white/80">
+      <p>Yes bro, it's fully safe with zero flags. We continuously update it.</p>
+    </div>
+  </div>
+
+  <!-- FAQ Item 2 -->
+  <div class="faq-item bg-white/10 backdrop-blur-md border border-white/20 rounded-xl shadow-lg p-5 mb-4 transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:bg-white/20 hover:border-white/30" data-aos="fade-up" data-aos-delay="200">
+    <div class="faq-toggle cursor-pointer flex items-center gap-3">
+      <span class="faq-icon text-xl text-white">➕</span>
+      <h3 class="faq-question text-white text-lg font-semibold">What Android versions are supported?</h3>
+    </div>
+    <div class="faq-answer hidden mt-2 ml-7 text-white/80">
+      <p>All Android versions from 10 to 15 are supported smoothly.</p>
+    </div>
+  </div>
+
+  <!-- FAQ Item 3 -->
+  <div class="faq-item bg-white/10 backdrop-blur-md border border-white/20 rounded-xl shadow-lg p-5 mb-4 transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:bg-white/20 hover:border-white/30" data-aos="fade-up" data-aos-delay="300">
+    <div class="faq-toggle cursor-pointer flex items-center gap-3">
+      <span class="faq-icon text-xl text-white">➕</span>
+      <h3 class="faq-question text-white text-lg font-semibold">Can I use it daily without ban?</h3>
+    </div>
+    <div class="faq-answer hidden mt-2 ml-7 text-white/80">
+      <p>Yes, daily usage is tested and safe. We ensure anti-ban protection.</p>
+    </div>
+  </div>
+
+  <!-- FAQ Item 4 -->
+  <div class="faq-item bg-white/10 backdrop-blur-md border border-white/20 rounded-xl shadow-lg p-5 mb-4 transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:bg-white/20 hover:border-white/30" data-aos="fade-up" data-aos-delay="400">
+    <div class="faq-toggle cursor-pointer flex items-center gap-3">
+      <span class="faq-icon text-xl text-white">➕</span>
+      <h3 class="faq-question text-white text-lg font-semibold">Does it work in tournaments?</h3>
+    </div>
+    <div class="faq-answer hidden mt-2 ml-7 text-white/80">
+      <p>Yes, it’s safe even in custom/tournament lobbies with the right config.</p>
+    </div>
+  </div>
+
+  <!-- FAQ Item 5 -->
+  <div class="faq-item bg-white/10 backdrop-blur-md border border-white/20 rounded-xl shadow-lg p-5 mb-4 transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:bg-white/20 hover:border-white/30" data-aos="fade-up" data-aos-delay="500">
+    <div class="faq-toggle cursor-pointer flex items-center gap-3">
+      <span class="faq-icon text-xl text-white">➕</span>
+      <h3 class="faq-question text-white text-lg font-semibold">Do you provide updates regularly?</h3>
+    </div>
+    <div class="faq-answer hidden mt-2 ml-7 text-white/80">
+      <p>Yes, we push updates regularly for bug fixes and new Android support.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials Section (Final Optimized) -->
+<section class="py-16 overflow-hidden" id="testimonial">
+  <div class="container mx-auto px-4">
+    <h2 class="text-3xl md:text-4xl font-bold text-center mb-10" data-aos="fade-up">What Our Users Say</h2>
+
+    <!-- Horizontal Scroll Container -->
+    <div class="relative">
+      <div class="flex gap-4 animate-scroll-x w-max hover:pause-animation">
+        <!-- Testimonial Card -->
+        <div class="min-w-[240px] bg-gray-800 border-l-4 border-pink-500 p-3 rounded-xl shadow-md hover:scale-105 hover:shadow-pink-500/30 transition duration-300">
+          <div class="flex items-center gap-3 mb-2">
+            <img src="https://randomuser.me/api/portraits/men/32.jpg" class="w-9 h-9 rounded-full border-2 border-pink-500" alt="User">
+            <div>
+              <h4 class="font-semibold text-sm text-white">Rohit Singh</h4>
+              <span class="text-xs text-pink-400">BGMI Player</span>
+            </div>
+          </div>
+          <p class="text-xs text-gray-300 leading-snug">"Best loader ever! Safe for main ID, no flags. 10/10!"</p>
+        </div>
+
+        <!-- More Cards -->
+        <div class="min-w-[240px] bg-gray-800 border-l-4 border-pink-500 p-3 rounded-xl shadow-md hover:scale-105 hover:shadow-pink-500/30 transition duration-300">
+          <div class="flex items-center gap-3 mb-2">
+            <img src="https://randomuser.me/api/portraits/women/44.jpg" class="w-9 h-9 rounded-full border-2 border-pink-500" alt="User">
+            <div>
+              <h4 class="font-semibold text-sm text-white">Ayesha Khan</h4>
+              <span class="text-xs text-pink-400">Streamer</span>
+            </div>
+          </div>
+          <p class="text-xs text-gray-300 leading-snug">"Smooth ESP and aimbot. Android 13 tested!"</p>
+        </div>
+
+        <div class="min-w-[240px] bg-gray-800 border-l-4 border-pink-500 p-3 rounded-xl shadow-md hover:scale-105 hover:shadow-pink-500/30 transition duration-300">
+          <div class="flex items-center gap-3 mb-2">
+            <img src="https://randomuser.me/api/portraits/men/77.jpg" class="w-9 h-9 rounded-full border-2 border-pink-500" alt="User">
+            <div>
+              <h4 class="font-semibold text-sm text-white">Kunal Mehta</h4>
+              <span class="text-xs text-pink-400">Gamer</span>
+            </div>
+          </div>
+          <p class="text-xs text-gray-300 leading-snug">"Trusted loader. Using it for 2+ months!"</p>
+        </div>
+
+        <div class="min-w-[240px] bg-gray-800 border-l-4 border-pink-500 p-3 rounded-xl shadow-md hover:scale-105 hover:shadow-pink-500/30 transition duration-300">
+          <div class="flex items-center gap-3 mb-2">
+            <img src="https://randomuser.me/api/portraits/men/45.jpg" class="w-9 h-9 rounded-full border-2 border-pink-500" alt="User">
+            <div>
+              <h4 class="font-semibold text-sm text-white">Harsh Tiwari</h4>
+              <span class="text-xs text-pink-400">Android 12 User</span>
+            </div>
+          </div>
+          <p class="text-xs text-gray-300 leading-snug">"No detection after 15 days. Clean and fast."</p>
+        </div>
+
+        <div class="min-w-[240px] bg-gray-800 border-l-4 border-pink-500 p-3 rounded-xl shadow-md hover:scale-105 hover:shadow-pink-500/30 transition duration-300">
+          <div class="flex items-center gap-3 mb-2">
+            <img src="https://randomuser.me/api/portraits/women/68.jpg" class="w-9 h-9 rounded-full border-2 border-pink-500" alt="User">
+            <div>
+              <h4 class="font-semibold text-sm text-white">Simran Kaur</h4>
+              <span class="text-xs text-pink-400">YouTuber</span>
+            </div>
+          </div>
+          <p class="text-xs text-gray-300 leading-snug">"Zero lag, full safe loader. Perfect for creators!"</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- Footer -->
+<footer class="bg-black text-gray-300 py-12 px-6" id="footer">
+  <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-8 items-start border-b border-gray-700 pb-8">
+
+    <!-- Logo and About -->
+    <div>
+      <h2 class="text-pink-500 text-2xl font-bold mb-4">BestCheat</h2>
+      <p class="text-sm leading-relaxed text-gray-400">
+        Premium loaders with high safety and smooth gameplay. <br>
+        Trusted by <span class="text-pink-400 font-semibold">50,000+ users</span>.
+      </p>
+    </div>
+
+    <!-- Quick Links -->
+    <div>
+      <h3 class="text-pink-500 text-lg font-semibold mb-4">Quick Links</h3>
+      <ul class="space-y-2 text-base">
+        <li><a href="#home" class="hover:text-pink-400 transition duration-200">Home</a></li>
+        <li><a href="#pricing" class="hover:text-pink-400 transition duration-200">Pricing</a></li>
+        <li><a href="#faq" class="hover:text-pink-400 transition duration-200">FAQ</a></li>
+      </ul>
+    </div>
+
+    <!-- Follow Us -->
+    <div class="text-center">
+      <h3 class="text-pink-500 text-xl font-bold mb-4">Follow Us</h3>
+      <div class="flex justify-center gap-6 text-2xl">
+        <a href="#" class="text-gray-400 hover:text-pink-400 transition-transform transform hover:scale-125 duration-300">
+          <i class="fab fa-telegram-plane"></i>
+        </a>
+        <a href="#" class="text-gray-400 hover:text-pink-400 transition-transform transform hover:scale-125 duration-300">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="#" class="text-gray-400 hover:text-pink-400 transition-transform transform hover:scale-125 duration-300">
+          <i class="fab fa-discord"></i>
+        </a>
+      </div>
+    </div>
+    
+  </div>
+
+  <!-- Bottom Line -->
+  <div class="text-center text-sm text-gray-600 mt-6">
+    © 2025 <span class="text-pink-500">BestCheat</span> The Next Level. All rights reserved.
+  </div>
+</footer>
+
+
+
+
+
+
+
+
   <!-- Footer -->
   <footer>
     <p>💬 Telegram: <a href="https://t.me/BESTCHEAT_VIP" class="text-blue-400 hover:underline">SURAJ KUMAR</a></p>
@@ -110,10 +366,6 @@
 
 
 
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-  AOS.init();
-</script> 
 
 </body>
 </html>
